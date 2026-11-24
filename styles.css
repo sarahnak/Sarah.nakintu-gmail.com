@@ -179,13 +179,16 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 0 26px;
+  min-height: 40px;
+  padding: 0 16px;
   border-radius: 999px;
   background: var(--accent);
   color: #FFFFFF;
+  font-family: Inter, system-ui, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .btn:hover { background: var(--accent-hover); color: #FFFFFF; }
@@ -196,6 +199,34 @@ h1 {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+}
+.hero-actions .text-link {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0F5C55;
+}
+.hero-actions .text-link:hover { color: var(--accent-hover); }
+
+#writing .card-kicker,
+#writing .card-cta {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0F5C55;
+}
+#writing a.card:hover .card-kicker,
+#writing a.card:hover .card-cta { color: var(--accent-hover); }
+
+@media (max-width: 480px) {
+  .btn,
+  .hero-actions .text-link,
+  #writing .card-kicker,
+  #writing .card-cta { letter-spacing: 0.05em; }
 }
 
 .location {
