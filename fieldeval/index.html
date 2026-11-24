@@ -44,9 +44,14 @@
       <p class="page-lede" style="margin-top:-24px"><a href="/assets/work/fieldeval-one-pager.pdf">Download the one-pager (PDF) →</a></p>
 
       <div class="prose">
-        <h2>Why low-resource languages matter</h2>
-        <p>Most AI safety testing happens in English. In 2023, <a href="https://arxiv.org/abs/2310.02446">researchers at Brown University</a> showed that translating unsafe English requests into low-resource languages got past GPT-4's safeguards far more often than English did. Newer models have closed the simplest version of this, but more recent studies show safeguards still weaken in African languages, especially over longer conversations and when the language is fluent rather than machine-translated.</p>
-        <p>If safeguards don't hold in one language, anyone who speaks it has a way around them. A gap in one language is a risk for everyone.</p>
+        <h2>Why African languages</h2>
+        <p>Most AI safety training and testing happens in English, and recent research shows safeguards don't reliably carry over to African languages.</p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2608.11146">Dr Seid Muhie Yimam and colleagues (2026)</a> found harmful prompts in Twi, Hausa, Amharic and Swahili keep less than 10% of the English refusal signal in most models tested.</li>
+          <li><a href="https://arxiv.org/abs/2605.18239">Marx and Dunaiski (2026)</a> found that in Afrikaans, Kiswahili, isiXhosa and isiZulu, attacks over several messages still work where single messages fail, and human red-teamers succeed more often than automated methods.</li>
+          <li><a href="https://arxiv.org/abs/2606.01322">TukaBench (2026)</a> found models often give confused answers instead of refusing, so a low attack rate doesn't mean a model is safe.</li>
+        </ul>
+        <p>No published study has tested whether chatbots refuse harmful requests from fluent Luganda or Lusoga speakers. That's the gap FieldEval starts with.</p>
 
         <h2>How it works</h2>
         <ul>
