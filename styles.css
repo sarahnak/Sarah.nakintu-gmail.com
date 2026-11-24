@@ -81,6 +81,19 @@ button:focus-visible {
 }
 .logo:hover { color: var(--text); }
 
+.home-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0 0 4px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+.home-back:hover { color: var(--accent-hover); }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
