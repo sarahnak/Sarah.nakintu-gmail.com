@@ -320,6 +320,7 @@ a.card:hover { color: var(--text); border-color: var(--accent); }
   line-height: 1.2;
   min-height: 2.4em;
 }
+.card-wide .card-title { min-height: 0; }
 .card-body {
   font-size: 16px;
   line-height: 1.5;
@@ -419,6 +420,7 @@ body:has(.hero) .contact { border-radius: 16px; }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   padding: 40px 0 48px;
   font-size: 16px;
