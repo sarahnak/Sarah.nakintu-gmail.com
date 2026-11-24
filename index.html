@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarah Nakintu</title>
+  <meta name="description" content="Partnerships, programs and operations for AI safety.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..600,100,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      try {
+        var q = location.search;
+        var force = /[?&]intro=1(?:&|$)/.test(q);
+        var skipQ = /[?&]intro=0(?:&|$)/.test(q);
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var seen = sessionStorage.getItem('sn-entry-seen') === '1';
+        if (skipQ || reduce || (seen && !force)) document.documentElement.classList.add('entry-skip');
+      } catch (e) {
+        document.documentElement.classList.add('entry-skip');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="entry" id="entry" aria-hidden="true">
+    <canvas class="entry-canvas" id="entryCanvas"></canvas>
+    <div class="entry-brand">
+      <p class="entry-mark">SN<span class="entry-dot">.</span></p>
+      <span class="entry-line"></span>
+    </div>
+  </div>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="#top">Sarah Nakintu</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="hero-ident">
+          <div class="portrait">
+            <picture>
+              <source type="image/webp" srcset="assets/sarah-nakintu.webp">
+              <img src="assets/sarah-nakintu.jpg" alt="Sarah Nakintu, partnerships and programs operator working on AI safety" width="800" height="800">
+            </picture>
+          </div>
+          <p class="eyebrow">Partnerships · Programs · Collaborations</p>
+        </div>
+        <h1>I build the programs and partnerships that make AI safe for the people it reaches.</h1>
+        <p class="lede">For 13 years I ran partnerships, programs, grants and events at Verizon, Meta and Unreasonable Group, including 177 partnerships across 9 regions at Meta. Today I lead FieldEval, where native speakers will test whether AI safeguards hold in the languages people actually use, and I help AI safety teams build the partnerships and programs behind their work.</p>
+        <div class="hero-actions">
+          <a class="btn" href="mailto:hello@sarahnakintu.com">Email me</a>
+          <a class="text-link" href="https://www.linkedin.com/in/sarahnakintu">LinkedIn</a>
+          <a class="text-link" href="https://thesafetyoperator.substack.com">Substack</a>
+          <a class="text-link" href="assets/sarah-nakintu-resume-v3.pdf">Resume</a>
+        </div>
+        <p class="location">New York · Zurich · London</p>
+      </div>
+    </section>
+
+    <section class="results" aria-label="Results">
+      <div class="stat">
+        <div class="stat-num">177</div>
+        <div class="stat-label">partnerships led at Meta, against a goal of 20</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$1.7M</div>
+        <div class="stat-label">in Community Impact Grants directed at Meta</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">70</div>
+        <div class="stat-label">NGO and corporate partners managed at Verizon</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$1.9M</div>
+        <div class="stat-label">partnership budget managed at Verizon</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$2M</div>
+        <div class="stat-label">accelerator programs sold and run for 300 entrepreneurs at Unreasonable</div>
+      </div>
+    </section>
+
+    <section class="previously" aria-label="Previously">
+      <p class="previously-label">Previously</p>
+      <ul class="logo-row">
+        <li><img src="assets/logos/verizon.svg" alt="Verizon" width="107" height="24"></li>
+        <li><img src="assets/logos/meta.svg" alt="Meta" width="119" height="24"></li>
+        <li><img src="assets/logos/unreasonable.svg" alt="Unreasonable Group" width="160" height="24"></li>
+        <li><img src="assets/logos/google.svg" alt="Google" width="71" height="24"></li>
+        <li><img src="assets/logos/un-wfp.svg" alt="UN World Food Programme" width="52" height="24"></li>
+        <li><img src="assets/logos/aol.svg" alt="AOL" width="68" height="24"></li>
+      </ul>
+    </section>
+
+    <section class="section" id="work">
+      <h2>What I'm working on</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-kicker">Founder</span>
+          <span class="card-title">FieldEval</span>
+          <span class="card-body">Designed to check how AI tools perform in the real world, in local languages and contexts, before deployment.</span>
+        </article>
+        <a class="card" href="musizi/">
+          <span class="card-kicker">Pilot · Uganda</span>
+          <span class="card-title">Musizi University</span>
+          <span class="card-body">An AI safety pilot I'm building with a Ugandan university, December 2026 to June 2027.</span>
+          <span class="card-cta">See the pilot →</span>
+        </a>
+        <a class="card" id="writing" href="https://thesafetyoperator.substack.com">
+          <span class="card-kicker">Newsletter</span>
+          <span class="card-title">The Safety Operator</span>
+          <span class="card-body">I write about running partnerships and programs for AI safety. Includes how I think about the field.</span>
+          <span class="card-cta">Read on Substack →</span>
+        </a>
+        <a class="card" href="assets/grant-making-verizon-v2.pdf">
+          <span class="card-kicker">Work samples</span>
+          <span class="card-title">How I work</span>
+          <span class="card-body">A grant-making model I led at Verizon, with identifying details limited to public program facts.</span>
+          <span class="card-cta">View sample →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Testimonial">
+      <figure class="quote-block">
+        <blockquote class="quote">“I am happy to serve as a reference for Sarah Nakintu, who was my direct report at Unreasonable Group. She is an exceptional connector, strategist, and someone who excels at getting things done. Furthermore, working with her is a truly enjoyable experience.”</blockquote>
+        <figcaption class="quote-attr">Colman Chamberlain, Chief Growth Officer, Girl Effect</figcaption>
+      </figure>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <div class="about-copy">
+        <p>Frontier labs have partnerships teams. Most safety organizations don't, so their researchers end up negotiating access, chasing funders and running programs themselves. That's the gap I fill.</p>
+        <p>I'm currently a Current Lab × BlueDot Impact fellow (AI Futures Mastermind, Cohort 1) and I write <a href="https://thesafetyoperator.substack.com">The Safety Operator</a>.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <h2>Want to build the partnerships and programs behind your safety work? Let's talk.</h2>
+        <p class="contact-sub">For safety teams and labs, and for funders who want to back FieldEval.</p>
+      </div>
+      <a class="btn-invert" href="mailto:hello@sarahnakintu.com">Email me</a>
+    </section>
+
+    <footer class="site-footer">
+      <span>© 2026 Sarah Nakintu</span>
+      <span class="footer-links">
+        <a href="https://www.linkedin.com/in/sarahnakintu">LinkedIn</a>
+        <a href="https://thesafetyoperator.substack.com">Substack</a>
+      </span>
+    </footer>
+  </div>
+  <script src="assets/entry.js"></script>
+</body>
+</html>
