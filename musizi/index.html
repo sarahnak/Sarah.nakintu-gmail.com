@@ -84,5 +84,49 @@
       </span>
     </footer>
   </div>
+  <script>
+    (function () {
+      var email = "hello@sarahnakintu.com";
+      function fallback(text) {
+        return new Promise(function (resolve) {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.setAttribute("readonly", "");
+          ta.style.position = "fixed";
+          ta.style.top = "0";
+          ta.style.left = "0";
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          try { document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(ta);
+          resolve();
+        });
+      }
+      function copyText(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          return navigator.clipboard.writeText(text).catch(function () { return fallback(text); });
+        }
+        return fallback(text);
+      }
+      document.querySelectorAll('a[href="mailto:' + email + '"]').forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var note = btn.nextElementSibling;
+          if (!note || !note.classList.contains("copy-note")) {
+            note = document.createElement("span");
+            note.className = "copy-note";
+            note.hidden = true;
+            note.textContent = "Copied hello@sarahnakintu.com";
+            btn.insertAdjacentElement("afterend", note);
+          }
+          copyText(email).then(function () {
+            note.hidden = false;
+            clearTimeout(note._hide);
+            note._hide = setTimeout(function () { note.hidden = true; }, 4000);
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
