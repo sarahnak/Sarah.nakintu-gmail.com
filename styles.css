@@ -296,30 +296,13 @@ h2 {
   line-height: 1.2;
 }
 
+#writing .card { max-width: 360px; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
-.writing-intro {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin: 0 0 20px;
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text);
-}
-.writing-intro p { margin: 0; }
-.writing-intro a {
-  color: #0F5C55;
-  font-weight: 500;
-  text-decoration: none;
-}
-.writing-intro a:hover { color: var(--accent-hover); }
-#writing .card { max-width: 360px; }
 
 .card {
   flex: 1 1 240px;
