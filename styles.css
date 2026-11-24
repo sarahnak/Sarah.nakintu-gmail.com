@@ -193,6 +193,19 @@ h1 {
 }
 .btn:hover { background: var(--accent-hover); color: #FFFFFF; }
 
+.copy-note {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #0F5C55;
+}
+.copy-note[hidden] { display: none; }
+.contact .copy-note { color: #8FD1C8; }
+
 .text-link {
   font-size: 16px;
   font-weight: 500;
