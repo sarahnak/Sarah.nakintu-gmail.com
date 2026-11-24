@@ -93,6 +93,7 @@ button:focus-visible {
   text-decoration: none;
 }
 .home-back:hover { color: var(--accent-hover); }
+.home-back-end { margin: 48px 0 0; }
 
 .nav {
   display: flex;
