@@ -200,7 +200,10 @@ h1 {
 
 .location {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--muted);
 }
 
