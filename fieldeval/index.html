@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FieldEval · Sarah Nakintu</title>
+  <meta name="description" content="FieldEval tests whether AI safeguards hold in the languages people actually use, starting with Luganda and Lusoga in Uganda.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..600,100,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .page-title { margin: 0 0 16px; font-size: 53px; line-height: 1.12; font-weight: 600; letter-spacing: -0.01em; }
+    .page-lede { margin: 0 0 40px; font-size: 19px; line-height: 1.55; color: var(--secondary); max-width: 680px; }
+    .prose { max-width: 720px; display: flex; flex-direction: column; gap: 20px; padding-bottom: 24px; }
+    .prose h2 { margin: 24px 0 0; font-size: 31px; }
+    .prose p, .prose li { font-size: 17px; line-height: 1.6; color: var(--secondary); }
+    .prose p { margin: 0; }
+    .prose ul { margin: 0; padding-left: 1.2em; }
+    @media (max-width: 768px) {
+      .page-title { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="/">Sarah Nakintu</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#work">Working on</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <a class="home-back" href="/">← Home</a>
+      <p class="eyebrow">Founder · Starting in Uganda</p>
+      <h1 class="page-title">FieldEval</h1>
+      <p class="page-lede">FieldEval tests whether AI safeguards hold in the languages people actually use. Trained native speakers test the chatbots people rely on, findings go privately to the labs that can fix them, and we retest.</p>
+
+      <div class="prose">
+        <h2>Why low-resource languages matter</h2>
+        <p>Most AI safety testing happens in English. In 2023, <a href="https://arxiv.org/abs/2310.02446">researchers at Brown University</a> showed that translating unsafe English requests into low-resource languages got past GPT-4's safeguards far more often than English did. Newer models have closed the simplest version of this, but more recent studies show safeguards still weaken in African languages, especially over longer conversations and when the language is fluent rather than machine-translated.</p>
+        <p>If safeguards don't hold in one language, anyone who speaks it has a way around them. A gap in one language is a risk for everyone.</p>
+
+        <h2>How it works</h2>
+        <ul>
+          <li>University students who are native speakers are trained as safety testers.</li>
+          <li>They test the chatbots people use most, in single messages and longer conversations, using lower-harm stand-in categories, never weapons.</li>
+          <li>Findings go privately to the affected labs first. A public summary, with no working attacks, follows after a fix or after 90 days.</li>
+          <li>We retest to see whether the fix holds.</li>
+        </ul>
+
+        <h2>Where we're starting</h2>
+        <p>The first pilot runs with Musizi University in Kampala, testing Luganda and Lusoga, from December 2026 to June 2027. <a href="/musizi/">See the Musizi pilot →</a></p>
+
+        <h2>Where it could go</h2>
+        <p>The same approach could check AI tools people already rely on, like farm advice apps, and support government testing teams in other African countries. If the pilot works, the plan is a network of African university testing teams.</p>
+
+        <h2>My role</h2>
+        <p>I lead the partnerships, programs and funding: getting labs, testers and a university to agree on access, data handling and disclosure. Technical methods are owned by university faculty and our research adviser.</p>
+      </div>
+    </main>
+
+    <section class="contact" id="contact">
+      <div>
+        <h2>Want to work with FieldEval?</h2>
+        <p class="contact-sub">For labs, safety institutes, researchers and funders.</p>
+      </div>
+      <a class="btn-invert" href="mailto:hello@sarahnakintu.com">hello@sarahnakintu.com</a>
+    </section>
+
+    <a class="home-back home-back-end" href="/">← Back to home</a>
+
+    <footer class="site-footer">
+      <span>© 2026 Sarah Nakintu</span>
+      <span class="footer-links">
+        <a href="https://www.linkedin.com/in/sarahnakintu">LinkedIn</a>
+        <a href="https://thesafetyoperator.substack.com">Substack</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
