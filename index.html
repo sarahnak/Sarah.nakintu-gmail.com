@@ -19,6 +19,8 @@
         var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         var seen = sessionStorage.getItem('sn-entry-seen') === '1';
         if (skipQ || reduce || (seen && !force)) document.documentElement.classList.add('entry-skip');
+        var nav = (q.match(/[?&]nav=([abcd])(?:&|$)/) || [])[1];
+        if (nav) document.documentElement.setAttribute('data-nav', nav);
       } catch (e) {
         document.documentElement.classList.add('entry-skip');
       }

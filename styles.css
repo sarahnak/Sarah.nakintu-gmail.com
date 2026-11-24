@@ -110,6 +110,56 @@ button:focus-visible {
 }
 .nav a:hover { color: var(--accent); }
 
+/* Preview only. ?nav=a|b|c|d on the homepage. Default nav is unchanged. */
+html[data-nav="a"] .nav a {
+  color: #1A1A1A;
+}
+html[data-nav="a"] .nav a:hover {
+  color: #1A1A1A;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #0F5C55;
+  text-underline-offset: 6px;
+}
+
+html[data-nav="b"] .nav a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+html[data-nav="b"] .nav a:hover { color: var(--accent-hover); }
+
+html[data-nav="c"] .nav a {
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+}
+html[data-nav="c"] .nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+html[data-nav="c"] .nav a[href="#contact"] {
+  background: #0F5C55;
+  border-color: #0F5C55;
+  color: #FFFFFF;
+}
+html[data-nav="c"] .nav a[href="#contact"]:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #FFFFFF;
+}
+
+html[data-nav="d"] .nav a {
+  font-family: Fraunces, "Times New Roman", serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .hero {
   display: block;
   padding: 56px 0 var(--space-section);
